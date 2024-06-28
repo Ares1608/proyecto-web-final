@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live 4 Style</title>
+    <link rel="icon" href="./img/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./js/formulario.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/contenidoHTML/proyecto1/img/logo.jpg" alt="Logo">
+            <h1>LIVE4STYLE</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#aboutus">Sobre Nosotros</a></li>
+                <li><a href="#locations">Sucursales</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="overlay">
+            <h2>Lleva tu estilo a otro nivel</h2>
+            <a href="#products" class="boton1">CATÁLOGO</a>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <h1 class="section-title">CATÁLOGO</h1>
+        <div class="product">
+            <img src="./img/producto1.jpeg" alt="producto 1 casio">
+            <h2>GFORCE</h2>
+            <p>$80.000</p>
+        </div>
+        <div class="product">
+            <img src="./img/product2.jpeg" alt="producto 2 QYQ">
+            <h2>QYQ</h2>
+            <p>$100.000</p>
+        </div>
+        <div class="product">
+            <img src="./img/producto3.jpeg" alt="producto 3 CURREN">
+            <h2>CURREN</h2>
+            <p>$75.000</p>
+        </div>
+        <div class="overlay2">
+            <h2>¿Quieres nuestros productos?</h2>
+            <a href="#contact" class="boton2">CONTÁCTANOS</a>
+        </div>
+    </section>
+    <section class="aboutus" id="aboutus">
+        <div class="mision" id="mission">
+            <div class="text">
+                <h1>Misión</h1>
+                <p>Nuestra misión es proporcionar a nuestros clientes una experiencia única y satisfactoria al adquirir accesorios de alta calidad que reflejen su estilo y personalidad. Nos esforzamos por ofrecer una amplia gama de productos elegantes y asequibles, junto con un servicio excepcional, brindando la comodidad de comprar en línea sin sacrificar la autenticidad y la artesanía de cada pieza. Valoramos la individualidad de nuestros clientes y buscamos ser su destino preferido para accesorios que completen su estilo y resalten su belleza interior.</p>
+            </div>
+            <img src="/contenidoHTML/proyecto1/img/mision.jpg" alt="Misión">
+        </div>
+        <div class="vision" id="vision">
+            <img src="/contenidoHTML/proyecto1/img/vision.jpg" alt="Visión">
+            <div class="text">
+                <h1>Visión</h1>
+                <p>Nuestra visión es convertirnos en la principal marca de accesorios digitales reconocida a nivel mundial, centrada en la excelencia, la innovación y la sostenibilidad. Nos esforzamos por ser líderes en la industria al ofrecer una experiencia de compra en línea sin complicaciones y una selección diversa de productos de alta calidad. Estamos comprometidos con la evolución constante, la adaptación a las tendencias cambiantes y la reducción de nuestro impacto ambiental. Aspiramos a inspirar la confianza y la lealtad de nuestros clientes al ayudarlos a expresar su estilo de manera única y significativa.</p>
+            </div>
+        </div>
+    </section>
+<section class="locations" id="locations">
+    <div class="locations_img">
+        <img src="./img/locations.jpg" alt="Location Image">
+    </div>
+    <div class="info">
+        <h1><br>Nuestra Ubicación</h1>
+        <p>Visítanos en nuestra tienda física para ver nuestros productos.</p>
+        <p>Ciudad Verde, Soacha, Cundinamarca</p>
+        <p>CC Titán Plaza, Local 406, Bogotá D.C</p>
+        <p>CC Santa Fe, Local 206, Bogotá D.C</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.564018461163!2d-74.22331118612664!3d4.604986849884784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f758bed3e5551%3A0xc9e567f327716033!2sCentro%20Comercial%20Jard%C3%ADn%20-%20Soacha!5e0!3m2!1ses-419!2sco!4v1718316177392!5m2!1ses-419!2sco" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="https://maps.app.goo.gl/wU5EpJBrPwztvpjY6" class="boton2"> VER EN GOOGLE MAPS</a>
+    </div>  
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact_left"></div>
+    <div class="contact_right">
+        <div class="contact_img">
+            <img src="/contenidoHTML/proyecto1/img/contact.jpg" alt="imagen contacto">
+        </div>
+        <div class="contact_info">
+            <h1>Contáctanos:</h1>
+            <p>Si quieres alguno de nuestros productos puedes contactarnos aquí.</p>
+            <form id="contact_form" action="https://formspree.io/f/xyzggvbk"
+            method="POST">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+                <input type="tel" id="celular" name="celular" placeholder="Celular" required>
+                <button type="submit" class="boton2">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">LIVE 4 STYLE</h1>
+                <p>
+                    Somos una tienda de accesorios dedicada a ofrecer productos de alta calidad que reflejen tu estilo y personalidad. Visítanos y encuentra el accesorio perfecto para ti.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h2>Enlaces Rápidos</h2>
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#productos">Catálogo</a></li>
+                    <li><a href="#aboutus">Sobre Nosotros</a></li>
+                    <li><a href="#locations">Sucursales</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contacto: &nbsp; </h2>
+                <ul>
+                    <li><span>Teléfono: </span> 310 7830000</li>
+                    <li><span>Email: </span>live4stylecompany@gmail.com</li>
+                    <li><span>Dirección: </span>Ciudad Verde Soacha, Cundinamarca</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Live 4 Style | Todos los derechos reservados
+        </div>
+    </footer>
+</body>
+</html>
